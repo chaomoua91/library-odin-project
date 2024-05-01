@@ -11,6 +11,16 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
   }
   img, picture, video, canvas, svg {
     display: block;
@@ -25,3 +35,34 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  .img{
+    display: flex;
+    width: 40%;
+    height: 95%;
+    margin: 1% 1% 1% 1%;
+    background: url(./pictures/ogbooks&pen.jpg) no-repeat center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid blue;
+    border-radius: 5px;
+
+}
+.img-description{
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 100%;
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    text-align: center;
+    
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+    text-align: center;
+}
+
+
