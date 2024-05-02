@@ -1,101 +1,95 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    display: flex;
-    flex-direction: row;
-    background-color: beige;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  #root, #__next {
-    isolation: isolate;
-  }
-
-  .img{
-    /* display: flex; */
-    width: 40%;
-    height: 95%;
-    margin: 1% 1% 1% 1%;
-    background: url(./pictures/ogbooks&pen.jpg) no-repeat center;
-    background-size: cover;
-    align-content: center;
-    justify-content: center;
-    border: 1px solid blue;
-    border-radius: 5px;
-
-}
-.img-description{
-    margin-top: auto;
-    margin-bottom: 10px;
-    font-size: 100%;
-    color: white;
-    font-weight: 900;
-    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-    text-align: center;
-    overflow: auto;
-    
-}
-a {
-    color: inherit;
-    text-decoration: inherit;
-    text-align: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
 }
 
-.main{
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    gap: 4px;
-    width: 60%;
-    height: 100%;
-    justify-content: center;
-    text-align: center;
-    
+.container {
+  border-style: groove;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.1fr;
+  text-align: center;
+  min-height: 100vh;
 }
 
-.heading { 
-    /* background-color: blue; */
-    display: flex;
-    grid-row: 1;
-    width: 60%;
- 
-    justify-content: center;
-    text-align: center;
-    padding: 1.5rem 3rem;
-    margin-right: auto;
-    
+.books .card {
+  /* background-color: #FFFFFF; */
+  background-color: #68a2ec;
+  color: black;
+  text-align: center;
+  height: 400px;
+  display: grid;
+  box-shadow: 5px 5px 5px black;
 }
 
-.card{
-    display: grid;
-    gap: 50px;
-    grid-column: 2;
-    background-color: burlywood;
-    border: solid;
-    overflow: auto;
-   
+h1 {
+  text-align: center;
+}
+
+.form-heading {
+  border-style: groove;
+}
+
+.form {
+  border-style: groove;
+}
+
+.books-heading {
+  border-style: groove;
+}
+
+.books {
+  background-color: #bccbde;
+  border-style: groove;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column: 2 / 3;
+  gap: 15px;
+  padding: 15px;
+}
+
+.add-book-button {
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+#add-book {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  gap: 10px;
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button,
+.reset-button {
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+  grid-column: 1 / 3;
+}
+
+.submit-button {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.remove-book-button {
+  grid-row: 5 / 6;
+  font-weight: 900;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.read-status-button {
+  grid-row: 6 / 7;
+  font-weight: 900;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
 }
