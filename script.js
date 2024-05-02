@@ -89,10 +89,7 @@ function displayBooksOnPage() {
       let retrieveBookToToggle = readStatusButton.dataset.linkedArray;
       Book.prototype = Object.create(Book.prototype);
       const toggleBook = new Book();
-      console.log(
-        "What is the toggle initial value?...",
-        myLibrary[parseInt(retrieveBookToToggle)].Read
-      );
+
 
       // Run check to see what read value is present to toggle from
       if (myLibrary[parseInt(retrieveBookToToggle)].Read == "Yes") {

@@ -2,8 +2,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: aqua;
-}
+  background-color: beige;
+
+;}
 
 .container {
   border-style: groove;
@@ -15,7 +16,7 @@ body {
 }
 
 .books .card {
-  /* background-color: #FFFFFF; */
+
   background-color: #68a2ec;
   color: black;
   text-align: center;
